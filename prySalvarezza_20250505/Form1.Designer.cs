@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSuperheroes));
             this.cmbSuperheroes = new System.Windows.Forms.ComboBox();
             this.imgSuperheroes = new System.Windows.Forms.PictureBox();
             this.lblSuperheroes = new System.Windows.Forms.Label();
@@ -155,8 +156,9 @@
             this.Controls.Add(this.lblSuperheroes);
             this.Controls.Add(this.imgSuperheroes);
             this.Controls.Add(this.cmbSuperheroes);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSuperheroes";
-            this.Text = "Form1";
+            this.Text = "Superheroes";
             this.Load += new System.EventHandler(this.frmSuperheroes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgSuperheroes)).EndInit();
             this.mrcCrear.ResumeLayout(false);
